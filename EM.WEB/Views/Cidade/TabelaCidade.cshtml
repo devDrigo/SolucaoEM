@@ -1,0 +1,92 @@
+﻿@using EM.DOMAIN;
+@using EM.REPOSITORY;
+
+@{
+
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="col-md-7 mx-auto">
+
+	<div class="row">
+		<h1 class="col">Tabela de Cidades</h1>
+		<a class="btn btn-success col align-self-center" style="max-width:180px; margin-right:20px;"asp-controller="Cidade" asp-action="CadastroCidade" asp-route-isEdicao="false"><img src="~/images/add.svg"> Adicionar  cidade</a>
+	</div>
+	<hr>
+@* 	<div class="form-check-inline">
+
+		<h6 class="form-check-inline"><strong>Opção de Busca:</strong></h6>
+
+		<div class="form-check-inline">
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+			<label class="form-check-label" for="flexRadioDefault1">
+				Nome da cidade
+			</label>
+
+			<div class="form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+				<label class="form-check-label" for="flexRadioDefault2">
+					UF da cidade
+				</label>
+			</div>
+		</div>
+	</div>
+	<form class="d-flex col-6" role="search">
+		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-success" type="submit">Search</button>
+	</form> *@
+
+	<p></p>
+
+
+	<div class= "col-md-10 mx-auto">
+		<table class="table table-bordered table-striped align-items-center bg-gray-100 col-6">
+		<thead>
+			<tr>
+				<th class="col-3">ID da cidade</th>
+				<th class="col">Nome da cidade</th>
+				<th class="col-2">UF</th>
+				<th class="scope-botao" scope="col">Opcões</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (CidadeModel cidade in Model)
+			{
+				<tr>
+					<td>@cidade.Id_cidade</td>
+					<td>@cidade.Nome</td>
+					<td>@cidade.UF</td>
+					<td class="teta">
+					<a type="button" class="btn teta btn-success" href="@Url.Action("CadastroCidade", "Cidade", new { id = cidade.Id_cidade })">Editar <img src="~/images/icon-editar.svg" /></a>
+					@* 	<button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExclui-@cidade.Id_cidade">
+							Excluir <img src="~/images/icon-lixeira.svg" />
+						</button> *@
+					</td>
+				</tr>
+				@* <div class="modal" id="modalExclui-@cidade.Id_cidade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Excluir</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+							</div>
+							<div class="modal-body">
+								<p>Tem certeza que deseja excluir ?</p>
+							</div>
+							<div class="modal-footer">
+								<form asp-action="RemoveCidade" asp-controller="Cidade" method="post">
+									<input type="hidden" name="Id_cidade" value="@cidade.Id_cidade" />
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+									<button type="submit" class="btn btn-primary">Excluir </button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div> *@
+			}
+
+		</tbody>
+	</table>
+	</div>
+	</div>
+

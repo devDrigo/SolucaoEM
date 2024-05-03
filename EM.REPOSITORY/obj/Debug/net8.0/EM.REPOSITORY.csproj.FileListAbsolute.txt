@@ -1,0 +1,141 @@
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Documents\estagio\cSharp\EM.DOMAIN\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\29.09\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Desktop\30.04\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Desktop\Desktop\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\rodrigo.garcia\Desktop\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.deps.json
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.AssemblyInfo.cs
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.sourcelink.json
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOS.5529B7D7.Up2Date
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\refint\EM.REPOSITORY.dll
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.REPOSITORY\obj\Debug\net8.0\ref\EM.REPOSITORY.dll
