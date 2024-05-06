@@ -26,20 +26,37 @@
 			</div>
 			<p></p>
 			<div class="col-md-2">
-				<label for="inputCPF" class="form-label">CPF:</label>
+				<label for="inputCPF" class="form-label">CPF</label>
 				<input oninput="mascara(this)" class="form-control col-md-2" id="CPF" name="CPF" placeholder="XXX.XXX.XXX-XX" value="@Model.CPF">
 				<span asp-validation-for="CPF" class="text-danger"></span>
 			</div>
 			<div class="col-md-2">
-				<label for="inputSexo" class="form-label">Sexo</label>
-				<select id="Sexo" name="Sexo" class="form-select" aria-label="Default select example" value="@Model.Sexo">
-					<option selected value="">Selecione</option>
-					<option value="1">Masculino</option>
-					<option value="0">Feminino</option>
+				<label for="inputSexo" class="form-label">Sexo*</label>
+				<select id="Sexo" name="Sexo" class="form-select" aria-label="Default select example">
+					<option value="" selected>Selecione</option>
+					@{
+						int? sexoValue = (int?)Model.Sexo;
+						if (sexoValue == 1)
+						{
+							<option value="1" selected>Masculino</option>
+							<option value="0">Feminino</option>
+						}
+						else if (sexoValue == 0)
+						{
+							<option value="1">Masculino</option>
+							<option value="0" selected>Feminino</option>
+						}
+						else
+						{
+							<option value="1">Masculino</option>
+							<option value="0">Feminino</option>
+						}
+					}
 				</select>
 			</div>
+
 			<div class="col-md-2">
-				<label for="DataNascimento" class="form-label">Data de Nascimento:</label>
+				<label for="DataNascimento" class="form-label">Data de Nascimento*</label>
 				<input type="date" name="DataNascimento" class="form-control" id="DataNascimento" value="@(Model.DataNascimento.HasValue ? Model.DataNascimento.Value.ToString("yyyy-MM-dd") : "")">
 				<span asp-validation-for="DataNascimento" class="text-danger"></span>
 			</div>
@@ -47,16 +64,24 @@
 
 
 			<div class="col-md-5">
-				<label for="inputCidade" class="form-label">Cidade:</label>
-				<select id="Cidade.Id_cidade" name="Cidade.ID_cidade" class="form-select" value="@Model.Cidade" required>
-					<option selected value="">Selecione</option>
+				<label for="inputCidade" class="form-label">Cidade*</label>
+				<select id="Cidade.Id_cidade" name="Cidade.ID_cidade" class="form-select">
+					<option value="">Selecione</option>
 					@foreach (var cidade in ViewBag.Cidades)
 					{
-						<option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
+						if (Model.Cidade != null && Model.Cidade.Id_cidade == cidade.Id_cidade)
+						{
+							<option value="@cidade.Id_cidade" selected>@cidade.Nome - @cidade.UF</option>
+						}
+						else
+						{
+							<option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
+						}
 					}
 				</select>
 				<span asp-validation-for="Cidade.Id_cidade" class="text-danger"></span>
 			</div>
+
 
 			<p></p>
 			<div class="centraliza col-md-12">

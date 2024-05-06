@@ -17,6 +17,6 @@ namespace EM.REPOSITORY
 		public abstract void Remove(T objeto);
 		public abstract void Update(T objeto);
 		public abstract IEnumerable<T> GetAll();
-		public abstract IEnumerable<T> Get(Expression<Func<T,bool>> predicate);
+		public abstract IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
 	}
 }

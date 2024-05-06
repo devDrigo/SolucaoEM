@@ -7,24 +7,24 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EM.DOMAIN.Servicos.Validations
 {
-    public class CpfValidationAttribute : ValidationAttribute
-    {
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
-        {
-            if (value == null)
-            {
-                return ValidationResult.Success;
-            }
+	public class CpfValidationAttribute : ValidationAttribute
+	{
+		protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
+		{
+			if (value == null)
+			{
+				return ValidationResult.Success!;
+			}
 
-            string cpf = value.ToString();
+			string cpf = value.ToString()!;
 
-            // Use o método CPFValidado para validar o CPF
-            if (!Validation.CPFValidado(cpf))
-            {
-                return new ValidationResult("CPF inválido.");
-            }
+			// Use o método CPFValidado para validar o CPF
+			if (!Validation.CPFValidado(cpf!))
+			{
+				return new ValidationResult("CPF inválido.");
+			}
 
-            return ValidationResult.Success;
-        }
-    }
+			return ValidationResult.Success!;
+		}
+	}
 }

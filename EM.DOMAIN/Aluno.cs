@@ -24,7 +24,7 @@ namespace EM.DOMAIN
 
 		[CpfValidation]
 		public string? CPF { get; set; }
+		[Required(ErrorMessage = "preencha este campo")]
 		public CidadeModel? Cidade { get; set; }
-
 	}
 }

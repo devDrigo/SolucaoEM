@@ -11,7 +11,7 @@ using System.Data.Common;
 namespace EM.REPOSITORY
 {
 	public class RepositorioAluno : RepositorioAbstrato<Aluno>, IRepositorioAluno<Aluno>
-    {
+	{
 		public override void Add(Aluno aluno)
 		{
 			using DbConnection cn = BDConnect.GetConexao();
@@ -20,14 +20,14 @@ namespace EM.REPOSITORY
 			cmd.CommandText = "INSERT INTO ALUNOS (MATRICULA, NOME, CIDADE_ID, CPF, DATANASCIMENTO, SEXO) " +
 								 "VALUES (@MATRICULA, @Nome, @Cidade_id, @CPF, @DataNascimento, @Sexo)";
 
-					cmd.Parameters.CreateParameter("@MATRICULA", long.Parse(DateTime.Now.ToString("yyyyMMddHHmmss")));
-					cmd.Parameters.CreateParameter("@Nome", aluno.Nome);
-					cmd.Parameters.CreateParameter("@Cidade_id", aluno.Cidade.Id_cidade);
-					cmd.Parameters.CreateParameter("@CPF", aluno.CPF);
-					cmd.Parameters.CreateParameter("@DataNascimento", aluno.DataNascimento);
-					cmd.Parameters.CreateParameter("@Sexo", aluno.Sexo);
+			cmd.Parameters.CreateParameter("@MATRICULA", long.Parse(DateTime.Now.ToString("yyyyMMddHHmmss")));
+			cmd.Parameters.CreateParameter("@Nome", aluno.Nome);
+			cmd.Parameters.CreateParameter("@Cidade_id", aluno.Cidade!.Id_cidade);
+			cmd.Parameters.CreateParameter("@CPF", aluno.CPF!);
+			cmd.Parameters.CreateParameter("@DataNascimento", aluno.DataNascimento!);
+			cmd.Parameters.CreateParameter("@Sexo", aluno.Sexo!);
 
-					cmd.ExecuteNonQuery();
+			cmd.ExecuteNonQuery();
 		}
 
 
@@ -61,10 +61,10 @@ namespace EM.REPOSITORY
 
 			cmd.Parameters.CreateParameter("@Matricula", aluno.Matricula);
 			cmd.Parameters.CreateParameter("@Nome", aluno.Nome);
-			cmd.Parameters.CreateParameter("@Cidade_id", aluno.Cidade.Id_cidade);
-			cmd.Parameters.CreateParameter("@CPF", aluno.CPF);
-			cmd.Parameters.CreateParameter("@DataNascimento", aluno.DataNascimento);
-			cmd.Parameters.CreateParameter("@Sexo", aluno.Sexo);
+			cmd.Parameters.CreateParameter("@Cidade_id", aluno.Cidade!.Id_cidade);
+			cmd.Parameters.CreateParameter("@CPF", aluno.CPF!);
+			cmd.Parameters.CreateParameter("@DataNascimento", aluno.DataNascimento!);
+			cmd.Parameters.CreateParameter("@Sexo", aluno.Sexo!);
 
 			cmd.ExecuteNonQuery();
 		}
@@ -74,46 +74,46 @@ namespace EM.REPOSITORY
 			return GetAll().Where(predicate.Compile());
 		}
 
-        public override IEnumerable<Aluno> GetAll()
-        {
-            using DbConnection cn = BDConnect.GetConexao();
-            using DbCommand cmd = cn.CreateCommand();
+		public override IEnumerable<Aluno> GetAll()
+		{
+			using DbConnection cn = BDConnect.GetConexao();
+			using DbCommand cmd = cn.CreateCommand();
 
-            // Inclui ID_cidade na consulta
-            cmd.CommandText = @"SELECT A.matricula, A.nome, A.sexo, A.dataNascimento, A.CPF, 
+			// Inclui ID_cidade na consulta
+			cmd.CommandText = @"SELECT A.matricula, A.nome, A.sexo, A.dataNascimento, A.CPF, 
                                C.nome AS nomeCidade, C.UF as UFCidade, C.ID_cidade 
                         FROM Alunos A
                         INNER JOIN Cidades C ON A.cidade_ID = C.ID_cidade 
                         ORDER BY A.matricula ASC";
 
-            List<Aluno> alunos = new List<Aluno>();
+			List<Aluno> alunos = new List<Aluno>();
 
-            DbDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                Aluno aluno = new Aluno
-                {
-                    Matricula = Convert.ToInt64(reader["matricula"]),
-                    Nome = reader["nome"].ToString(),
-                    CPF = reader["CPF"].ToString(),
-                    DataNascimento = Convert.ToDateTime(reader["datanascimento"]),
-                    Sexo = reader.IsDBNull(reader.GetOrdinal("SEXO")) ? null : (SexoEnum?)reader.GetInt32(reader.GetOrdinal("SEXO")),
-                    Cidade = new CidadeModel
-                    {
-                        Nome = reader["NomeCidade"].ToString(),
-                        UF = reader["UFCidade"].ToString(),
-                        Id_cidade = Convert.ToInt32(reader["ID_cidade"])  // Adicionando o ID da cidade
-                    }
-                };
+			DbDataReader reader = cmd.ExecuteReader();
+			while (reader.Read())
+			{
+				Aluno aluno = new Aluno
+				{
+					Matricula = Convert.ToInt64(reader["matricula"]),
+					Nome = reader["nome"].ToString()!,
+					CPF = reader["CPF"].ToString(),
+					DataNascimento = Convert.ToDateTime(reader["datanascimento"]),
+					Sexo = reader.IsDBNull(reader.GetOrdinal("SEXO")) ? null : (SexoEnum?)reader.GetInt32(reader.GetOrdinal("SEXO")),
+					Cidade = new CidadeModel
+					{
+						Nome = reader["NomeCidade"].ToString(),
+						UF = reader["UFCidade"].ToString(),
+						Id_cidade = Convert.ToInt32(reader["ID_cidade"])  // Adicionando o ID da cidade
+					}
+				};
 
-                alunos.Add(aluno);
-            }
-            reader.Close();
-            return alunos;
-        }
+				alunos.Add(aluno);
+			}
+			reader.Close();
+			return alunos;
+		}
 
 
-        public IEnumerable<Aluno> GetByMatricula(long matricula)
+		public IEnumerable<Aluno> GetByMatricula(long matricula)
 		{
 			using DbConnection cn = BDConnect.GetConexao();
 			using DbCommand cmd = cn.CreateCommand();
@@ -122,28 +122,28 @@ namespace EM.REPOSITORY
 																				INNER JOIN 
 										 Cidades C ON A.cidade_ID = C.ID_cidade WHERE A.matricula = @matricula order by A.matricula asc";
 
-			List <Aluno> alunos = new List<Aluno>();
+			List<Aluno> alunos = new List<Aluno>();
 
-				// Adicione esta linha para declarar o parâmetro @matricula
-				cmd.Parameters.CreateParameter("@matricula", matricula);
+			// Adicione esta linha para declarar o parâmetro @matricula
+			cmd.Parameters.CreateParameter("@matricula", matricula);
 
-				DbDataReader reader = cmd.ExecuteReader();
-				while (reader.Read())
-				{
-					Aluno aluno = new Aluno();
-					aluno.Matricula = Convert.ToInt64(reader["matricula"]);
-					aluno.Nome = reader["nome"].ToString();
-					aluno.CPF = reader["CPF"].ToString();
-					aluno.DataNascimento = Convert.ToDateTime(reader["datanascimento"]);
-					aluno.Sexo = (SexoEnum)reader.GetInt32(reader.GetOrdinal("SEXO"));
-					// Preencher as informações da cidade associada ao aluno
-					aluno.Cidade = new CidadeModel();
-					aluno.Cidade.Nome = reader["NomeCidade"].ToString();
-					aluno.Cidade.UF = reader["UFCidade"].ToString();
-					alunos.Add(aluno);
-				}
-				reader.Close();
-			
+			DbDataReader reader = cmd.ExecuteReader();
+			while (reader.Read())
+			{
+				Aluno aluno = new Aluno();
+				aluno.Matricula = Convert.ToInt64(reader["matricula"]);
+				aluno.Nome = reader["nome"].ToString()!;
+				aluno.CPF = reader["CPF"].ToString();
+				aluno.DataNascimento = Convert.ToDateTime(reader["datanascimento"]);
+				aluno.Sexo = (SexoEnum)reader.GetInt32(reader.GetOrdinal("SEXO"));
+				// Preencher as informações da cidade associada ao aluno
+				aluno.Cidade = new CidadeModel();
+				aluno.Cidade.Nome = reader["NomeCidade"].ToString();
+				aluno.Cidade.UF = reader["UFCidade"].ToString();
+				alunos.Add(aluno);
+			}
+			reader.Close();
+
 			return alunos;
 		}
 
@@ -156,30 +156,27 @@ namespace EM.REPOSITORY
 																				INNER JOIN 
 									 Cidades C ON A.cidade_ID = C.ID_cidade WHERE A.nome LIKE '%' || @nomeParcial || '%' order by A.matricula asc";
 
-			List <Aluno> alunos = new List<Aluno>();
+			List<Aluno> alunos = new List<Aluno>();
 
-				//declarar o parâmetro @nomeParcial
-				cmd.Parameters.CreateParameter("@nomeParcial", nome);
+			//declarar o parâmetro @nomeParcial
+			cmd.Parameters.CreateParameter("@nomeParcial", nome);
 
-				DbDataReader reader = cmd.ExecuteReader();
-				while (reader.Read())
-				{
-					Aluno aluno = new Aluno();
-					aluno.Matricula = Convert.ToInt64(reader["matricula"]);
-					aluno.Nome = reader["nome"].ToString();
-					aluno.CPF = reader["CPF"].ToString();
-					aluno.DataNascimento = Convert.ToDateTime(reader["datanascimento"]);
-					// Converter o valor inteiro do sexo para o enum Sexo
-					int sexoInt = Convert.ToInt32(reader["sexo"]);
-					SexoEnum sexo = (SexoEnum)sexoInt;
-					aluno.Sexo = sexo;
-					// Preencher as informações da cidade associada ao aluno
-					aluno.Cidade = new CidadeModel();
-					aluno.Cidade.Nome = reader["NomeCidade"].ToString();
-					aluno.Cidade.UF = reader["UFCidade"].ToString();
-					alunos.Add(aluno);
-				}
-				reader.Close();
+			DbDataReader reader = cmd.ExecuteReader();
+			while (reader.Read())
+			{
+				Aluno aluno = new Aluno();
+				aluno.Matricula = Convert.ToInt64(reader["matricula"]);
+				aluno.Nome = reader["nome"].ToString()!;
+				aluno.CPF = reader["CPF"].ToString();
+				aluno.DataNascimento = Convert.ToDateTime(reader["datanascimento"]);
+				aluno.Sexo = (SexoEnum)reader.GetInt32(reader.GetOrdinal("SEXO"));
+				// Preencher as informações da cidade associada ao aluno
+				aluno.Cidade = new CidadeModel();
+				aluno.Cidade.Nome = reader["NomeCidade"].ToString();
+				aluno.Cidade.UF = reader["UFCidade"].ToString();
+				alunos.Add(aluno);
+			}
+			reader.Close();
 			return alunos;
 		}
 	}

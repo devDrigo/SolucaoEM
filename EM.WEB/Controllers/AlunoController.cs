@@ -24,23 +24,20 @@ namespace EM.WEB.Controllers
 			_env = env;
 		}
 
-		// Outras ações...
 
 		public IActionResult GerarRelatorio()
 		{
 			// Obtenha a lista de alunos. Você pode obter isso do seu repositório.
 			List<Aluno> alunos = repositorioAluno.GetAll().ToList();
 
-			// Gere o relatório e obtenha o caminho do arquivo PDF.
+			// Gere o relatório e obtenha o PDF como um array de bytes.
 			// Aqui estamos passando null para CidadeId e Sexo, já que não temos esses valores neste contexto.
-			string pdfPath = geradorRelatorio.GerarRelatorio(alunos, null, null);
+			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunos, null, null);
 
-			// Abra o arquivo PDF em um FileStream.
-			var stream = new FileStream(pdfPath, FileMode.Open);
-
-			// Retorne o FileStream como um FileStreamResult.
-			return new FileStreamResult(stream, "application/pdf");
+			// Retorne o array de bytes como um FileContentResult.
+			return File(pdfBytes, "application/pdf");
 		}
+
 
 		[HttpPost]
 		public IActionResult GerarRelatorio(int? Id_cidade, int? Sexo)
@@ -51,27 +48,24 @@ namespace EM.WEB.Controllers
 			// Se CidadeId for fornecido, filtre os alunos por CidadeId
 			if (Id_cidade.HasValue)
 			{
-				alunos = alunos.Where(a => a.Cidade.Id_cidade == Id_cidade);
+				alunos = alunos.Where(a => a.Cidade!.Id_cidade == Id_cidade);
 			}
 
 			// Se Sexo for fornecido, filtre os alunos por Sexo
 			if (Sexo.HasValue)
 			{
-				alunos = alunos.Where(a => (int)a.Sexo == Sexo.Value);
+				alunos = alunos.Where(a => (int)a.Sexo! == Sexo.Value);
 			}
 
 			// Converta a consulta para uma lista para execução
 			List<Aluno> alunosList = alunos.ToList();
 
-			string pdfPath = geradorRelatorio.GerarRelatorio(alunosList, Id_cidade, Sexo);
+			// Gere o relatório e obtenha o PDF como um array de bytes.
+			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunosList, Id_cidade, Sexo);
 
-			// Abra o arquivo PDF em um FileStream.
-			var stream = new FileStream(pdfPath, FileMode.Open);
-
-			// Retorne o FileStream como um FileStreamResult.
-			return new FileStreamResult(stream, "application/pdf");
+			// Retorne o array de bytes como um FileContentResult.
+			return File(pdfBytes, "application/pdf");
 		}
-
 
 
 

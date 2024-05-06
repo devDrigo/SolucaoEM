@@ -1,6 +1,3 @@
-using System.Diagnostics;
-using EM.DOMAIN;
-using EM.REPOSITORY;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EM.WEB.Controllers

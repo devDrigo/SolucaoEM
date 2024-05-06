@@ -54,7 +54,7 @@
 				<th class="col">CPF</th>
 				<th class="col">Cidade</th>
 				<th class="col">UF</th>
-				<th class="teta" scope="col">Opcões</th>
+			<th class="options" scope="col">Opcões</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -69,7 +69,7 @@
 					<td>@aluno.Cidade.Nome</td>
 					<td>@aluno.Cidade.UF</td>
 					<td class="teta">
-					<a type="button" class="btn teta btn-success" href="@Url.Action("CadastroAluno", "Aluno", new { matricula = aluno.Matricula })">Editar <img src="~/images/icon-editar.svg" /></a>
+					<a type="button" class="btn options btn-success" href="@Url.Action("CadastroAluno", "Aluno", new { matricula = aluno.Matricula })">Editar <img src="~/images/icon-editar.svg" /></a>
 						<button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExclui-@aluno.Matricula">
 						Excluir <img src="~/images/icon-lixeira.svg"/>
 						</button>

@@ -11,7 +11,7 @@
 
 			<div class="col-md-3">
 				<label for="cidade">Filtro de Cidade</label>
-				<select @* asp-for="Cidade" *@ id="Id_cidade" name="Id_cidade" class="form-select">
+				<select id="Id_cidade" name="Id_cidade" class="form-select">
 					<option value="">Selecione para Filtrar</option>
 					@foreach (var cidade in ViewBag.Cidades)
 					{

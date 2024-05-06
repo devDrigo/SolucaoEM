@@ -9,28 +9,28 @@ using System.Linq.Expressions;
 using FirebirdSql.Data.FirebirdClient;
 
 
-namespace EM.REPOSITORY 
+namespace EM.REPOSITORY
 {
-    public class RepositorioCidade : RepositorioAbstrato<CidadeModel>, IRepositorioCidade<CidadeModel>
-    {
+	public class RepositorioCidade : RepositorioAbstrato<CidadeModel>, IRepositorioCidade<CidadeModel>
+	{
 
-			private readonly FbConnection conn;
+		private readonly FbConnection conn;
 
-			public RepositorioCidade()
-			{
-				conn = BDConnect.GetConexao();
-			}
+		public RepositorioCidade()
+		{
+			conn = BDConnect.GetConexao();
+		}
 
-			public override void Add(CidadeModel cidade)
+		public override void Add(CidadeModel cidade)
 		{
 			using DbConnection cn = BDConnect.GetConexao();
 			using DbCommand cmd = cn.CreateCommand();
 
 			cmd.CommandText = "INSERT INTO CIDADES (NOME, UF) " +
 								 "VALUES (@Nome, @UF)";
-				
-			cmd.Parameters.CreateParameter("@Nome", cidade.Nome);
-			cmd.Parameters.CreateParameter("@UF", cidade.UF);
+
+			cmd.Parameters.CreateParameter("@Nome", cidade.Nome!);
+			cmd.Parameters.CreateParameter("@UF", cidade.UF!);
 
 			cmd.ExecuteNonQuery();
 		}
@@ -63,10 +63,10 @@ namespace EM.REPOSITORY
 			cmd.CommandText = "UPDATE Cidades SET Nome = @Nome, UF = @UF WHERE Id_Cidade = @Id_Cidade";
 
 
-					cmd.Parameters.CreateParameter("@Nome", cidade.Nome.ToUpper());
-					cmd.Parameters.CreateParameter("@UF", cidade.UF.ToUpper());
-					cmd.Parameters.CreateParameter("@Id_Cidade", cidade.Id_cidade);
-					cmd.ExecuteNonQuery();
+			cmd.Parameters.CreateParameter("@Nome", cidade.Nome!.ToUpper());
+			cmd.Parameters.CreateParameter("@UF", cidade.UF!.ToUpper());
+			cmd.Parameters.CreateParameter("@Id_Cidade", cidade.Id_cidade);
+			cmd.ExecuteNonQuery();
 
 		}
 
@@ -81,7 +81,7 @@ namespace EM.REPOSITORY
 			using DbConnection cn = BDConnect.GetConexao();
 			using DbCommand cmd = cn.CreateCommand();
 
-			cmd.CommandText  = @"SELECT * FROM CIDADES ORDER BY CIDADES.UF, CIDADES.NOME";
+			cmd.CommandText = @"SELECT * FROM CIDADES ORDER BY CIDADES.UF, CIDADES.NOME";
 
 			List<CidadeModel> cidades = new List<CidadeModel>();
 
@@ -96,7 +96,7 @@ namespace EM.REPOSITORY
 				cidades.Add(cidade);
 			}
 			reader.Close();
-			
+
 			return cidades;
 		}
 
