@@ -102,7 +102,7 @@ namespace EM.REPOSITORY
 					{
 						Nome = reader["NomeCidade"].ToString(),
 						UF = reader["UFCidade"].ToString(),
-						Id_cidade = Convert.ToInt32(reader["ID_cidade"])  // Adicionando o ID da cidade
+						Id_cidade = Convert.ToInt32(reader["ID_cidade"])
 					}
 				};
 
