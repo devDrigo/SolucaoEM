@@ -9,9 +9,8 @@ namespace EM.DOMAIN.Servicos
 {
 	public class GeradorRelatorioAluno
 	{
-		public byte[] GerarRelatorio(List<Aluno> alunos, int? Id_cidade, int? Sexo)
+		public byte[] GerarRelatorio(List<Aluno> alunos, int? Id_cidade, int? Sexo, string? Ordem)
 		{
-			string pdfPath = "RelatorioAlunos.pdf";
 			// Filtra a lista de alunos com base nos parâmetros do formulário
 			if (Id_cidade.HasValue)
 			{
@@ -20,6 +19,22 @@ namespace EM.DOMAIN.Servicos
 			if (Sexo.HasValue)
 			{
 				alunos = alunos.Where(a => (int)a.Sexo! == Sexo.Value).ToList();
+			}
+
+			switch (Ordem)
+			{
+				case "Nome":
+					alunos = alunos.OrderBy(a => a.Nome).ToList();
+					break;
+				case "DataNascimento":
+					alunos = alunos.OrderBy(a => a.DataNascimento).ToList();
+					break;
+				case "Cidade":
+					alunos = alunos.OrderBy(a => a.Cidade.Nome).ToList();
+					break;
+				case "UF":
+					alunos = alunos.OrderBy(a => a.Cidade.UF).ToList();
+					break;
 			}
 
 
