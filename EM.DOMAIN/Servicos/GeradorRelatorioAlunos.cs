@@ -44,7 +44,7 @@ namespace EM.DOMAIN.Servicos
 				PdfWriter writer = PdfWriter.GetInstance(document, ms);
 				document.Open();
 
-				BaseColor grey = new BaseColor(230, 230, 230);
+				BaseColor grey = new BaseColor(210, 210, 210);
 
 				//retângulo cinza que uso como plano de fundo
 				PdfContentByte canvas = writer.DirectContentUnder;
@@ -59,7 +59,7 @@ namespace EM.DOMAIN.Servicos
 				layoutTable.WidthPercentage = 100;
 
 				//logotipo
-				string logoPath = "https://seeklogo.com/images/C/cope-logo-E75101577D-seeklogo.com.png";
+				string logoPath = "https://www.grupocope.com.br/imgs/245/215/images/cope-421.png";
 				Image logo = Image.GetInstance(logoPath);
 				logo.ScaleToFit(100, 100);
 				PdfPCell logoCell = new PdfPCell(logo);
@@ -70,14 +70,14 @@ namespace EM.DOMAIN.Servicos
 				Font titleFont = FontFactory.GetFont("Arial", 24, Font.BOLD);
 				Paragraph title = new Paragraph("Relatório de Alunos", titleFont);
 				title.Alignment = Element.ALIGN_LEFT;
+				title.Alignment = Element.ALIGN_BOTTOM;
+				title.SpacingAfter= 20;
 				PdfPCell titleCell = new PdfPCell();
 				titleCell.AddElement(title);
 				titleCell.Border = Rectangle.NO_BORDER;
 				layoutTable.AddCell(titleCell);
 
 				document.Add(layoutTable);
-
-				document.Add(new Paragraph());
 
 
 				//linha de divisão
@@ -110,50 +110,27 @@ namespace EM.DOMAIN.Servicos
 				// PARÂMETROS DA TABELA
 				PdfPTable table = new PdfPTable(new float[] { 7, 10, 4, 5, 5, 6, 2 });
 				table.WidthPercentage = 110;
+				table.WidthPercentage = 110;
+				table.DefaultCell.FixedHeight = 30;
+				table.DefaultCell.HorizontalAlignment = Element.ALIGN_CENTER;
+				table.DefaultCell.VerticalAlignment = Element.ALIGN_MIDDLE;
 
 				//cabeçalho da tabela
-				PdfPCell cell = new PdfPCell(new Phrase("Matrícula"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
+				table.AddCell(new Phrase("Matrícula"));
+				table.AddCell(new Phrase("Nome"));
+				table.AddCell(new Phrase("Sexo"));
+				table.AddCell(new Phrase("Data de Nascimento"));
+				table.AddCell(new Phrase("Idade"));
+				table.AddCell(new Phrase("Cidade"));
+				table.AddCell(new Phrase("UF"));
 
-				cell = new PdfPCell(new Phrase("Nome"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-				cell = new PdfPCell(new Phrase("Sexo"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-				cell = new PdfPCell(new Phrase("Data de Nascimento"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-				cell = new PdfPCell(new Phrase("Idade"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-				cell = new PdfPCell(new Phrase("Cidade"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-				cell = new PdfPCell(new Phrase("UF"));
-				cell.HorizontalAlignment = Element.ALIGN_CENTER;
-				cell.VerticalAlignment = Element.ALIGN_MIDDLE;
-				table.AddCell(cell);
-
-
+			
 				//conteúdo da tabela
-				foreach (var aluno in alunos)
+				foreach (Aluno aluno in alunos)
 				{
 					table.AddCell(aluno.Matricula.ToString());
 					table.AddCell(aluno.Nome);
-					table.AddCell(aluno.Sexo == SexoEnum.Masculino ? "Masculino" : "Feminino");
+					table.AddCell(aluno.Sexo.ToString());
 					table.AddCell(aluno.DataNascimento.HasValue ? aluno.DataNascimento.Value.ToString("dd/MM/yyyy") : "");
 					table.AddCell(CalcularIdade(aluno.DataNascimento));
 					table.AddCell(aluno.Cidade!.Nome);
@@ -172,7 +149,7 @@ namespace EM.DOMAIN.Servicos
 		{
 			if (!dataNascimento.HasValue)
 			{
-				return "Data de nascimento não fornecida";
+				return "----";
 			}
 
 			DateTime agora = DateTime.Now;
