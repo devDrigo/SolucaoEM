@@ -108,7 +108,7 @@ namespace EM.DOMAIN.Servicos
 				document.Add(new Paragraph("\n"));
 
 				// PARÂMETROS DA TABELA
-				PdfPTable table = new PdfPTable(new float[] { 7, 10, 4, 5, 5, 6, 2 });
+				PdfPTable table = new PdfPTable(new float[] { 7, 10, 3, 6, 5, 6, 2 });
 				table.WidthPercentage = 110;
 				table.WidthPercentage = 110;
 				table.DefaultCell.FixedHeight = 30;
@@ -119,7 +119,7 @@ namespace EM.DOMAIN.Servicos
 				table.AddCell(new Phrase("Matrícula"));
 				table.AddCell(new Phrase("Nome"));
 				table.AddCell(new Phrase("Sexo"));
-				table.AddCell(new Phrase("Data de Nascimento"));
+				table.AddCell(new Phrase("CPF"));
 				table.AddCell(new Phrase("Idade"));
 				table.AddCell(new Phrase("Cidade"));
 				table.AddCell(new Phrase("UF"));
@@ -131,7 +131,7 @@ namespace EM.DOMAIN.Servicos
 					table.AddCell(aluno.Matricula.ToString());
 					table.AddCell(aluno.Nome);
 					table.AddCell(aluno.Sexo.ToString());
-					table.AddCell(aluno.DataNascimento.HasValue ? aluno.DataNascimento.Value.ToString("dd/MM/yyyy") : "");
+					table.AddCell(aluno.CPF);
 					table.AddCell(CalcularIdade(aluno.DataNascimento));
 					table.AddCell(aluno.Cidade!.Nome);
 					table.AddCell(aluno.Cidade.UF);

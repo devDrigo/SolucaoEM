@@ -63,8 +63,8 @@
 				<tr>
 					<td>@aluno.Matricula</td>
 					<td>@aluno.Nome</td>
-					<td>@aluno.Sexo</td>
-					<td>@aluno.DataNascimento.Value.ToString("dd/MM/yyyy")</td>
+				<td>@(aluno.Sexo == SexoEnum.M ? "Masculino" : "Feminino")</td>
+				<td>@aluno.DataNascimento.Value.ToString("dd/MM/yyyy")</td>
 					<td>@aluno.CPF</td>
 					<td>@aluno.Cidade.Nome</td>
 					<td>@aluno.Cidade.UF</td>

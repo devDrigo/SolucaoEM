@@ -8,7 +8,7 @@ namespace EM.DOMAIN
 {
 	public enum SexoEnum : short
 	{
-		Masculino = 1,
-		Feminino = 0
+		M = 1,
+		F = 0
 	}
 }
