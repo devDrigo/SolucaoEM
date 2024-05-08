@@ -44,16 +44,6 @@ namespace EM.DOMAIN.Servicos
 				PdfWriter writer = PdfWriter.GetInstance(document, ms);
 				document.Open();
 
-				BaseColor grey = new BaseColor(210, 210, 210);
-
-				//retângulo cinza que uso como plano de fundo
-				PdfContentByte canvas = writer.DirectContentUnder;
-				canvas.SaveState();
-				canvas.SetColorFill(grey);
-				canvas.Rectangle(0, 0, document.PageSize.Width, document.PageSize.Height);
-				canvas.Fill();
-				canvas.RestoreState();
-
 				// layout do cabeçalho
 				PdfPTable layoutTable = new PdfPTable(new float[] { 3, 6 });
 				layoutTable.WidthPercentage = 100;
