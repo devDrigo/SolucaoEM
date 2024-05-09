@@ -15,10 +15,12 @@ namespace EM.DOMAIN.Servicos.Relatorio
 
 			base.OnStartPage(writer, document);
 			// layout do titulo
-			PdfPTable layoutTable = new PdfPTable(new float[] { 3, 6 });
-			layoutTable.WidthPercentage = 100;
+			PdfPTable layoutTable = new PdfPTable(new float[] { 3, 6, 3 });
+			layoutTable.WidthPercentage = 107;
 			layoutTable.DefaultCell.HorizontalAlignment = Element.ALIGN_CENTER;
 			layoutTable.DefaultCell.Border = Rectangle.NO_BORDER;
+			layoutTable.DefaultCell.Border = Rectangle.NO_BORDER;
+
 
 			//logotipo do titulo
 			string logoPath = "https://www.grupocope.com.br/imgs/245/215/images/cope-421.png";
@@ -26,6 +28,7 @@ namespace EM.DOMAIN.Servicos.Relatorio
 			logo.ScaleToFit(100, 100);
 			PdfPCell logoCell = new PdfPCell(logo);
 			logoCell.Border = Rectangle.NO_BORDER;
+			logoCell.BorderWidthBottom = 1f;
 
 			layoutTable.AddCell(logoCell);
 
@@ -38,12 +41,33 @@ namespace EM.DOMAIN.Servicos.Relatorio
 			titleCell.HorizontalAlignment = Element.ALIGN_CENTER;
 			titleCell.VerticalAlignment = Element.ALIGN_MIDDLE;
 			titleCell.Border = Rectangle.NO_BORDER;
-			titleCell.AddElement(title);
+			titleCell.BorderWidthBottom = 1f;
 
+			titleCell.AddElement(title);
 			layoutTable.AddCell(titleCell);
+
+
+			Font dataFonte = FontFactory.GetFont("Arial", 15);
+			string data = DateTime.Now.ToString("dd/MM/yyyy");
+			Paragraph dataP = new Paragraph(data, dataFonte);
+
+
+			PdfPCell DataCell = new PdfPCell();
+
+			DataCell.AddElement(dataP);
+
+			DataCell.HorizontalAlignment = Element.ALIGN_CENTER;
+
+			DataCell.BorderWidthBottom = 1f;
+
+			layoutTable.AddCell(DataCell);
+
+
+			layoutTable.SpacingAfter = 10;
 
 			document.Add(layoutTable);
 
+			//linha de divisão
 
 			PdfGState gs = new()
 			{
@@ -57,6 +81,8 @@ namespace EM.DOMAIN.Servicos.Relatorio
 			// Adiciona a imagem de fundo
 			PdfContentByte canvas = writer.DirectContentUnder;
 			canvas.AddImage(backgroundImage);
+
+
 
 		}
 	}

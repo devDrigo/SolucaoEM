@@ -36,13 +36,14 @@ namespace EM.DOMAIN.Servicos.Relatorio
 				document.Open();
 
                 
-                //linha de divisão
+/*                //linha de divisão
                 Chunk linebreak = new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(1f, 107f, BaseColor.BLACK, Element.ALIGN_CENTER, -1));
 
                 document.Add(linebreak);
+				document.Add(new Paragraph("\n"));*/
 
-                // filtra e mostra os filtros utilizados(se utilizado)
-                if (Id_cidade.HasValue || Sexo.HasValue)
+				// filtra e mostra os filtros utilizados(se utilizado)
+				if (Id_cidade.HasValue || Sexo.HasValue)
                 {
                     Font filterFont = FontFactory.GetFont("Arial", 12, Font.NORMAL);
                     document.Add(new Paragraph($"Filtros utilizados:"));
@@ -65,16 +66,50 @@ namespace EM.DOMAIN.Servicos.Relatorio
 
                 document.Add(new Paragraph("\n"));
 
-				PdfPTable table = new PdfPTable(new float[] { 7, 10, 3, 6, 5, 6, 2 }) { WidthPercentage = 105 };
+				PdfPTable table = new PdfPTable(new float[] { 7, 10, 3, 7, 5, 6, 2 }) { WidthPercentage = 105 };
 				table.DefaultCell.FixedHeight = 30;
 				table.DefaultCell.HorizontalAlignment = Element.ALIGN_CENTER;
 				table.DefaultCell.VerticalAlignment = Element.ALIGN_MIDDLE;
 
-				// Função para criar células do cabeçalho com fonte branca
+
+
+/*
+                PdfPTable dateTable = new PdfPTable(1);
+                dateTable.WidthPercentage = 80;  // Full width
+
+
+                Font dateFont = FontFactory.GetFont("Arial", 12, Font.NORMAL);
+                string date = DateTime.Now.ToString("dd/MM/yy");
+                string dateEmissao = $"data de emissão: {date}";
+                Paragraph dateP = new Paragraph(dateEmissao, dateFont)
+                {
+                    Alignment = Element.ALIGN_CENTER
+                };
+
+                PdfPCell dateCell = new PdfPCell(new Phrase(dateP))
+                {
+
+                    HorizontalAlignment = Element.ALIGN_LEFT,
+                    VerticalAlignment = Element.ALIGN_TOP,
+                    PaddingLeft = 420
+
+                };
+                dateTable.AddCell(dateCell);
+
+                // Add the title table to the document; it should appear over the logo
+                document.Add(dateTable);
+*/
+
+
+
+
+
+				// Função para criar células do cabeçalho do jeito que quero
 				PdfPCell CreateHeaderCell(string text) =>
 					new PdfPCell(new Phrase(text, new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD, BaseColor.WHITE)))
 					{
-						BackgroundColor = new BaseColor(0, 100, 0)
+                        HorizontalAlignment = Element.ALIGN_CENTER,
+				        BackgroundColor = new BaseColor(0, 100, 0)
 
 					};
 
@@ -100,6 +135,7 @@ namespace EM.DOMAIN.Servicos.Relatorio
                     table.AddCell(aluno.Cidade.UF);
                 }
 
+                table.SpacingBefore = 10;
 				table.HeaderRows = 1;
 				document.Add(table);
 				document.Close();
