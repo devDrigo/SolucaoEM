@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using EM.DOMAIN;
 using EM.REPOSITORY;
 using System.Reflection;
-using EM.DOMAIN.Servicos;
+using EM.DOMAIN.Servicos.Relatorio;
 
 
 namespace EM.WEB.Controllers
 {
-	public class AlunoController : Controller
+    public class AlunoController : Controller
 	{
 		private readonly IRepositorioAluno<Aluno> repositorioAluno;
 		private readonly IRepositorioCidade<CidadeModel> repositorioCidade;

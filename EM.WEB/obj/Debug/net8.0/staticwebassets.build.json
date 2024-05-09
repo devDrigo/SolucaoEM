@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3y5eeVKHvO68jHAdimHxuYq2J26of0fV1i6nEUYF3ls=",
+  "Hash": "F4oIbL8AwBo7L5jexIiCpYPLrPxT3c+4JS+QBAY3KyM=",
   "Source": "EM.WEB",
   "BasePath": "_content/EM.WEB",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\add.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\images\\escolar_manager_logo (3).png",
+      "SourceId": "EM.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\",
+      "BasePath": "_content/EM.WEB",
+      "RelativePath": "images/escolar_manager_logo (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\escolar_manager_logo (3).png"
     },
     {
       "Identity": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\images\\icon-editar.svg",

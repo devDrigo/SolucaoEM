@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\add.svg"
     },
     {
+      "Id": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\images\\escolar_manager_logo (3).png",
+      "PackagePath": "staticwebassets\\images\\escolar_manager_logo (3).png"
+    },
+    {
       "Id": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\images\\icon-editar.svg",
       "PackagePath": "staticwebassets\\images\\icon-editar.svg"
     },

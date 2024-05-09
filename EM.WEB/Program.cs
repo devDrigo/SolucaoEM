@@ -1,5 +1,5 @@
 using EM.DOMAIN;
-using EM.DOMAIN.Servicos;
+using EM.DOMAIN.Servicos.Relatorio;
 using EM.REPOSITORY;
 
 var builder = WebApplication.CreateBuilder(args);
