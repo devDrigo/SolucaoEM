@@ -32,7 +32,7 @@ namespace EM.WEB.Controllers
 
 			// Gere o relatório e obtenha o PDF como um array de bytes.
 			// Aqui estamos passando null para CidadeId e Sexo, já que não temos esses valores neste contexto.
-			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunos, null, null, null);
+			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunos, null, null, null,null, false);
 
 			// Retorne o array de bytes como um FileContentResult.
 			return File(pdfBytes, "application/pdf");
@@ -40,21 +40,30 @@ namespace EM.WEB.Controllers
 
 
 		[HttpPost]
-		public IActionResult GerarRelatorio(int? Id_cidade, int? Sexo, string? Ordem)
+		public IActionResult GerarRelatorio(int? Id_cidade, int? Sexo, string? Ordem, bool linhasZebradas, bool horizontal)
 		{
 			// Obtenha a lista de alunos do seu repositório e converta para IQueryable
 			IQueryable<Aluno> alunos = repositorioAluno.GetAll().AsQueryable();
+
+			// Aplica os filtros
+			if (Id_cidade.HasValue)
+			{
+				alunos = alunos.Where(a => a.Cidade!.Id_cidade == Id_cidade);
+			}
+			if (Sexo.HasValue)
+			{
+				alunos = alunos.Where(a => (int)a.Sexo! == Sexo.Value);
+			}
 
 			// Converta a consulta para uma lista para execução
 			List<Aluno> alunosList = alunos.ToList();
 
 			// Gere o relatório e obtenha o PDF como um array de bytes.
-			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunosList, Id_cidade, Sexo, Ordem);
+			byte[] pdfBytes = geradorRelatorio.GerarRelatorio(alunosList, Id_cidade, Sexo, Ordem, linhasZebradas, horizontal);
 
 			// Retorne o array de bytes como um FileContentResult.
 			return File(pdfBytes, "application/pdf");
 		}
-
 
 
 		public IActionResult TabelaAluno()

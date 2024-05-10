@@ -5,10 +5,10 @@
 <div class="formulario">
 	<h1 style="text-align:center;">Gerar relatório de alunos</h1>
 
-	<div class="">
 		<form class="row justify-content-center" id="meuFormulario" asp-action="GerarRelatorio" asp-controller="Aluno" method="post" target="_blank">
 
 
+			<div class="row gx-3 gy-1 justify-content-center align-items-center">
 			<div class="col-md-3">
 				<label for="cidade">Filtro de Cidade</label>
 				<select id="Id_cidade" name="Id_cidade" class="form-select">
@@ -19,8 +19,19 @@
 					}
 				</select>
 			</div>
-
-
+			
+			<div class="col-md-3">
+				<label for="cidade">Filtro de Estado</label>
+				<select id="Id_cidade" name="Id_cidade" class="form-select">
+					<option value="">Selecione para Filtrar</option>
+					@foreach (var cidade in ViewBag.Cidades)
+					{
+						<option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
+					}
+				</select>
+			</div>
+	</div>
+		<div class="row gx-3 gy-1 justify-content-center align-items-center">
 			<div class="col-md-3">
 				<label for="sexo">Filtro por Sexo</label>
 				<select id="sexo" name="Sexo" class="form-select">
@@ -40,7 +51,21 @@
 					<option value="UF">Estado</option>
 				</select>
 			</div>
+			</div>
+			
 
+
+		<div class="row g-1 gy-2 ">
+			<div class="col-2 form-check form-switch self" style=" margin-left:340px">
+				<input class="form-check-input" type="checkbox" value="true" id="linhasZebradasSwitch" name="linhasZebradas">
+				<label class="form-check-label" for="linhasZebradasSwitch">Linhas Zebradas</label>
+			</div>
+			
+			<div class="col-2 form-check form-switch " style=" margin-left:100px; padding-left:-80">
+				<input class="form-check-input" type="checkbox" value="true" id="horizontal" name="horizontal">
+				<label class="form-check-label" for="linhasZebradasSwitch">horizontal</label>
+			</div>
+			</div>
 
 			<p></p>
 			<div class="centraliza col-md-12">
@@ -48,6 +73,5 @@
 			</div>
 
 		</form>
-	</div>
 	</div>
 

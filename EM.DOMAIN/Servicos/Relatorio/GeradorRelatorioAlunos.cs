@@ -8,7 +8,7 @@ namespace EM.DOMAIN.Servicos.Relatorio
 {
     public class GeradorRelatorioAluno
     {
-        public byte[] GerarRelatorio(List<Aluno> alunos, int? Id_cidade, int? Sexo, string? Ordem)
+        public byte[] GerarRelatorio(List<Aluno> alunos, int? Id_cidade, int? Sexo, string? Ordem, bool? linhasZebradas, bool horizontal)
         {
 
             switch (Ordem)
@@ -30,41 +30,15 @@ namespace EM.DOMAIN.Servicos.Relatorio
 
             using (MemoryStream ms = new MemoryStream())
             {
-				Document document = new Document(PageSize.A4, 25, 25, 25, 30);
+
+
+				Document document = horizontal ? document = new(PageSize.A4.Rotate(), 25, 25, 25, 30) : document = new(PageSize.A4, 25, 25, 25, 30);
 				PdfWriter writer = PdfWriter.GetInstance(document, ms);
 				writer.PageEvent = new HeaderEvent();
 				document.Open();
 
-                
-/*                //linha de divisão
-                Chunk linebreak = new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(1f, 107f, BaseColor.BLACK, Element.ALIGN_CENTER, -1));
+				
 
-                document.Add(linebreak);
-				document.Add(new Paragraph("\n"));*/
-
-				// filtra e mostra os filtros utilizados(se utilizado)
-				if (Id_cidade.HasValue || Sexo.HasValue)
-                {
-                    Font filterFont = FontFactory.GetFont("Arial", 12, Font.NORMAL);
-                    document.Add(new Paragraph($"Filtros utilizados:"));
-                    Paragraph filtros = new Paragraph($"Filtros utilizados:");
-                    if (Id_cidade.HasValue)
-                    {
-						alunos = alunos.Where(a => a.Cidade!.Id_cidade == Id_cidade).ToList();
-						Paragraph filterCidade = new Paragraph($"• Cidade: ID-{Id_cidade}");
-                        filterCidade.Alignment = Element.ALIGN_LEFT;
-                        document.Add(filterCidade);
-                    }
-                    if (Sexo.HasValue)
-                    {
-						alunos = alunos.Where(a => (int)a.Sexo! == Sexo.Value).ToList();
-						Paragraph filterSexo = new Paragraph($"• Sexo: {(Sexo.Value == 1 ? "Masculino" : "Feminino")}", filterFont);
-                        filterSexo.Alignment = Element.ALIGN_LEFT;
-                        document.Add(filterSexo);
-                    }
-                }
-
-                document.Add(new Paragraph("\n"));
 
 				PdfPTable table = new PdfPTable(new float[] { 7, 10, 3, 7, 5, 6, 2 }) { WidthPercentage = 105 };
 				table.DefaultCell.FixedHeight = 30;
@@ -72,36 +46,45 @@ namespace EM.DOMAIN.Servicos.Relatorio
 				table.DefaultCell.VerticalAlignment = Element.ALIGN_MIDDLE;
 
 
+				// filtra e mostra os filtros utilizados dentro de um retangulo com borda arredondado(se algum filtro for utilizado)
+				PdfContentByte cb = writer.DirectContent;
+				cb.SetRGBColorStroke(0, 0, 0);
+				cb.SetLineWidth(1f);
 
-/*
-                PdfPTable dateTable = new PdfPTable(1);
-                dateTable.WidthPercentage = 80;  // Full width
+				float larguraRetangulo = 140, alturaRetangulo = 80, margemDireita = 20, margemSuperior = 20;
+				float posicaoX = document.PageSize.Width - larguraRetangulo - margemDireita;
+				float posicaoY = document.PageSize.Height - alturaRetangulo - margemSuperior;
 
+				if (Id_cidade.HasValue || Sexo.HasValue)
+				{
+					cb.RoundRectangle(posicaoX, posicaoY, larguraRetangulo, alturaRetangulo, 10);
+					cb.Stroke();
 
-                Font dateFont = FontFactory.GetFont("Arial", 12, Font.NORMAL);
-                string date = DateTime.Now.ToString("dd/MM/yy");
-                string dateEmissao = $"data de emissão: {date}";
-                Paragraph dateP = new Paragraph(dateEmissao, dateFont)
-                {
-                    Alignment = Element.ALIGN_CENTER
-                };
+					cb.BeginText();
+					cb.SetRGBColorFill(0, 0, 0);
+					cb.SetFontAndSize(BaseFont.CreateFont(), 10f);
 
-                PdfPCell dateCell = new PdfPCell(new Phrase(dateP))
-                {
+					float posX = posicaoX + (larguraRetangulo - cb.GetEffectiveStringWidth("Filtros utilizados:", false)) / 3;
+					float posY = posicaoY;
+					cb.ShowTextAligned(Element.ALIGN_LEFT, "Filtros utilizados:", posX, posicaoY + alturaRetangulo - 5 - 15, 0);
 
-                    HorizontalAlignment = Element.ALIGN_LEFT,
-                    VerticalAlignment = Element.ALIGN_TOP,
-                    PaddingLeft = 420
+					if (Id_cidade.HasValue)
+					{
+						alunos = alunos.Where(a => a.Cidade!.Id_cidade == Id_cidade).ToList();
+						string filterCidade = $"• Cidade: ID-{Id_cidade}";
+						cb.ShowTextAligned(Element.ALIGN_LEFT, filterCidade, posX, posicaoY + alturaRetangulo - 10 - 10 - 20, 0);
+						posY -= 15;
+					}
+					if (Sexo.HasValue)
+					{
+						alunos = alunos.Where(a => (int)a.Sexo! == Sexo.Value).ToList();
+						string filterSexo = $"• Sexo: {(Sexo.Value == 1 ? "Masculino" : "Feminino")}";
+						cb.ShowTextAligned(Element.ALIGN_LEFT, filterSexo, posX, posY + alturaRetangulo - 10 - 10 - 20, 0);
+						posY -= 15;
+					}
 
-                };
-                dateTable.AddCell(dateCell);
-
-                // Add the title table to the document; it should appear over the logo
-                document.Add(dateTable);
-*/
-
-
-
+					cb.EndText();
+				}
 
 
 				// Função para criar células do cabeçalho do jeito que quero
@@ -123,19 +106,35 @@ namespace EM.DOMAIN.Servicos.Relatorio
 				table.AddCell(CreateHeaderCell("UF"));
 
 
-				//conteúdo da tabela
-				foreach (Aluno aluno in alunos)
-                {
-                    table.AddCell(aluno.Matricula.ToString());
-                    table.AddCell(aluno.Nome);
-                    table.AddCell(aluno.Sexo.ToString());
-                    table.AddCell(aluno.CPF);
-                    table.AddCell(CalcularIdade(aluno.DataNascimento));
-                    table.AddCell(aluno.Cidade!.Nome);
-                    table.AddCell(aluno.Cidade.UF);
-                }
 
-                table.SpacingBefore = 10;
+				//conteúdo da tabela
+				int rowIndex = 0;
+				foreach (Aluno aluno in alunos)
+				{
+					if (linhasZebradas.HasValue && linhasZebradas.Value && rowIndex % 2 == 1)
+					{
+						// Altere a cor de fundo para cinza claro para linhas ímpares
+						table.DefaultCell.BackgroundColor = new BaseColor(0, 0, 0,40);
+					}
+					else
+					{
+						// Mantenha a cor de fundo branca para linhas pares
+						table.DefaultCell.BackgroundColor = null;
+					}
+
+					table.AddCell(aluno.Matricula.ToString());
+					table.AddCell(aluno.Nome);
+					table.AddCell(aluno.Sexo.ToString());
+					table.AddCell(aluno.CPF);
+					table.AddCell(CalcularIdade(aluno.DataNascimento));
+					table.AddCell(aluno.Cidade!.Nome);
+					table.AddCell(aluno.Cidade.UF);
+
+					rowIndex++;
+				}
+
+
+				table.SpacingBefore = 10;
 				table.HeaderRows = 1;
 				document.Add(table);
 				document.Close();
