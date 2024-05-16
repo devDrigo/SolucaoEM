@@ -138,11 +138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
       "projectName": "EM.WEB",
-      "projectPath": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
+      "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
       "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\obj\\",
+      "outputPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,11 +159,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj": {
-              "projectPath": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj"
+            "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj": {
+              "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj"
             },
-            "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {
-              "projectPath": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj"
+            "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {
+              "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj"
             }
           }
         }

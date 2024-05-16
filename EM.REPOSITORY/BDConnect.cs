@@ -1,30 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FirebirdSql.Data.FirebirdClient;//preciso mudar pra algo mais genrico depois
+﻿using FirebirdSql.Data.FirebirdClient;
 
 
 namespace EM.REPOSITORY
 {
-	public class BDConnect
-	{
-		private static string _caminho = @"Database=C:\COPE.FDB;User=SYSDBA;Password=masterkey;DataSource=localhost;Port=3054;";
-		private static FbConnection? conn = null;
+    public class BDConnect
+    {
+        //pego o caminho relativo para nao precisar mudar quando abro em computador diferente.
+        private static string _caminhoRelativo = @"\COPE.FDB";
+        private static string _caminhoAbsoluto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _caminhoRelativo);
 
+        private static string _caminho = $@"Database={_caminhoAbsoluto};User=SYSDBA;Password=masterkey;DataSource=localhost;Port=3054;";
 
-		public static FbConnection GetConexao()
-		{
-			if (conn == null || conn.State != System.Data.ConnectionState.Open)
-			{
-				FbConnection.ClearAllPools();
-				conn = new FbConnection(_caminho);
-				conn.Open();
-			}
+        private static FbConnection? conn = null;
 
-			return conn;
-		}
-	}
+        public static FbConnection GetConexao()
+        {
+            if (conn == null || conn.State != System.Data.ConnectionState.Open)
+            {
+                FbConnection.ClearAllPools();
+                conn = new FbConnection(_caminho);
+                conn.Open();
+            }
+
+            return conn;
+        }
+    }
 }

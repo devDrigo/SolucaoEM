@@ -1,77 +1,89 @@
-﻿@model EM.DOMAIN.Aluno
-
+﻿@using EM.DOMAIN;
+@model EM.DOMAIN.Aluno
 
 <p></p>
 <div class="formulario">
-	<h1 style="text-align:center;">Gerar relatório de alunos</h1>
+    <h1 style="text-align:center;">Gerar relatório de alunos</h1>
 
-		<form class="row justify-content-center" id="meuFormulario" asp-action="GerarRelatorio" asp-controller="Aluno" method="post" target="_blank">
-
-
-			<div class="row gx-3 gy-1 justify-content-center align-items-center">
-			<div class="col-md-3">
-				<label for="cidade">Filtro de Cidade</label>
-				<select id="Id_cidade" name="Id_cidade" class="form-select">
-					<option value="">Selecione para Filtrar</option>
-					@foreach (var cidade in ViewBag.Cidades)
-					{
-						<option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
-					}
-				</select>
-			</div>
-			
-			<div class="col-md-3">
-				<label for="cidade">Filtro de Estado</label>
-				<select id="Id_cidade" name="Id_cidade" class="form-select">
-					<option value="">Selecione para Filtrar</option>
-					@foreach (var cidade in ViewBag.Cidades)
-					{
-						<option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
-					}
-				</select>
-			</div>
-	</div>
-		<div class="row gx-3 gy-1 justify-content-center align-items-center">
-			<div class="col-md-3">
-				<label for="sexo">Filtro por Sexo</label>
-				<select id="sexo" name="Sexo" class="form-select">
-					<option value="">Selecione para Filtrar</option>
-					<option value="1">Masculino</option>
-					<option value="0">Feminino</option>
-				</select>
-				</div>
-
-			<div class="col-md-3">
-				<label for="ordem">Ordenar por</label>
-				<select id="ordem" name="Ordem" class="form-select">
-					<option value="">Selecione para Ordenar</option>
-					<option value="Nome">Nome</option>
-					<option value="DataNascimento">Data de Nascimento</option>
-					<option value="Cidade">Cidade</option>
-					<option value="UF">Estado</option>
-				</select>
-			</div>
-			</div>
-			
+    <form class="row justify-content-center" id="meuFormulario" asp-action="GerarRelatorio" asp-controller="Aluno" method="post" target="_blank">
 
 
-		<div class="row g-1 gy-2 ">
-			<div class="col-2 form-check form-switch self" style=" margin-left:340px">
-				<input class="form-check-input" type="checkbox" value="true" id="linhasZebradasSwitch" name="linhasZebradas">
-				<label class="form-check-label" for="linhasZebradasSwitch">Linhas Zebradas</label>
-			</div>
-			
-			<div class="col-2 form-check form-switch " style=" margin-left:100px; padding-left:-80">
-				<input class="form-check-input" type="checkbox" value="true" id="horizontal" name="horizontal">
-				<label class="form-check-label" for="linhasZebradasSwitch">horizontal</label>
-			</div>
-			</div>
+        <div class="row gx-3 gy-1 justify-content-center align-items-center">
+            <div class="col-md-3">
+                <label for="cidade">Filtro de Cidade</label>
+                <select id="Id_cidade" name="Id_cidade" class="form-select">
+                    <option value="">Selecione para Filtrar</option>
+                    @foreach (var cidade in ViewBag.Cidades)
+                    {
+                        <option value="@cidade.Id_cidade">@cidade.Nome - @cidade.UF</option>
+                    }
+                </select>
+            </div>
 
-			<p></p>
-			<div class="centraliza col-md-12">
-				<button type="submit" class="btn btn-primary ms-auto" style="max-width:140px; margin-right:20px;">Gerar Relatório</button>
-			</div>
+            <div class="col-md-3">
+                <label for="cidade">Filtro de Estado</label>
+                <select id="uf" name="uf" class="form-select">
+                    <option value="">Selecione para Filtrar</option>
+                    @{
+                        var cidades = ViewBag.Cidades as List<CidadeModel>;
+                        var estadosUnicos = cidades!.Select(cidade => cidade.UF).Distinct();
+                    }
+                    @foreach (var estado in estadosUnicos)
+                    {
+                        <option value="@estado">@estado</option>
+                    }
 
-		</form>
-	</div>
 
+                </select>
+            </div>
+        </div>
+
+        <div class="row gx-3 gy-1 justify-content-center align-items-center">
+            <div class="col-md-3">
+                <label for="sexo">Filtro por Sexo</label>
+                <select id="sexo" name="Sexo" class="form-select">
+                    <option value="">Selecione para Filtrar</option>
+                    <option value="1">Masculino</option>
+                    <option value="0">Feminino</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="ordem">Ordenar por</label>
+                <select id="ordem" name="Ordem" class="form-select">
+                    <option value="">Selecione para Ordenar</option>
+                    <option value="Nome">Nome</option>
+                    <option value="DataNascimento">Data de Nascimento</option>
+                    <option value="Cidade">Cidade</option>
+                    <option value="UF">Estado</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row gx-3 gy-2 justify-content-center align-items-center">
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="form-check form-switch self">
+                        <input class="form-check-input" type="checkbox" value="true" id="linhasZebradasSwitch" name="linhasZebradas">
+                        <label class="form-check-label" for="linhasZebradasSwitch">Linhas Zebradas</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="true" id="horizontal" name="horizontal">
+                        <label class="form-check-label" for="horizontal">Horizontal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+        <div class="centraliza col-md-12">
+            <button type="submit" class="btn btn-primary ms-auto" style="max-width:140px; margin-right:20px;">Gerar Relatório</button>
+        </div>
+
+    </form>
+</div>

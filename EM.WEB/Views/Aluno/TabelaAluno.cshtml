@@ -4,100 +4,99 @@
 
 @{
 
-	ViewData["Title"] = "Cadastro do Aluno";
+    ViewData["Title"] = "Cadastro do Aluno";
 }
 
 
 
-	<div class="row">
-		<h1 class="col">Tabela de Alunos</h1>
-		<a class="btn btn-success col align-self-center" style="max-width:180px; margin-right:20px;" asp-area="" asp-controller="Aluno" asp-action="CadastroAluno" asp-route-isEdicao="false"><img src="~/images/add.svg"> Adicionar  aluno</a>
-	</div>
-	<hr>
+<div class="row">
+    <h1 class="col">Tabela de Alunos</h1>
+    <a class="btn btn-success col align-self-center" style="max-width:180px; margin-right:20px;" asp-area="" asp-controller="Aluno" asp-action="CadastroAluno" asp-route-isEdicao="false"><img src="~/images/add.svg"> Adicionar  aluno</a>
+</div>
+<hr>
 
-	<div class="d-flex row-2">
+<div class="d-flex row-2">
 
-	<div class="d-flex align-items-center">
-		<div class="form-check-inline">
-			<h6><strong>Opções de Busca:</strong></h6>
-		</div>
-		<div class="form-check-inline">
-			<input class="form-check-input" type="radio" name="searchOptions" id="searchMatricula" value="matricula" onchange="updateSearchType()">
-			<label class="form-check-label" for="searchMatricula">Matrícula</label>
-		</div>
-		<div class="form-check-inline">
-			<input class="form-check-input" type="radio" name="searchOptions" id="searchNome" value="nome" onchange="updateSearchType()">
-			<label class="form-check-label" for="searchNome">Nome</label>
-		</div>
-	</div>
+    <div class="d-flex align-items-center">
+        <div class="form-check-inline">
+            <h6><strong>Opções de Busca:</strong></h6>
+        </div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="searchOptions" id="searchMatricula" value="matricula" onchange="updateSearchType()">
+            <label class="form-check-label" for="searchMatricula">Matrícula</label>
+        </div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="searchOptions" id="searchNome" value="nome" onchange="updateSearchType()">
+            <label class="form-check-label" for="searchNome">Nome</label>
+        </div>
+    </div>
 </div>
 
 <div class="row">
-	<form class="d-flex col-6" role="search" action="/Aluno/Search" method="post">
-		<input class="form-control col me-2" type="search" placeholder="Matrícula ou nome do aluno..." aria-label="Search" name="searchTerm">
-		<input class="col" type="hidden" name="searchType" id="searchType">
-		<button class="btn btn-success md-1" type="submit">Buscar</button>
-	</form>
-	<a type="button" class="btn btn-primary ms-auto" style="max-width:230px; margin-right:20px;" asp-area="" asp-controller="Aluno" asp-action="GerarRelatorio" target="_blank">Relatório de todos os alunos</a>
+    <form class="d-flex col-6" role="search" action="/Aluno/Search" method="post">
+        <input class="form-control col me-2" type="search" placeholder="Matrícula ou nome do aluno..." aria-label="Search" name="searchTerm">
+        <input class="col" type="hidden" name="searchType" id="searchType">
+        <button class="btn btn-success md-1" type="submit">Buscar</button>
+    </form>
+    <a type="button" class="btn btn-primary ms-auto" style="max-width:230px; margin-right:20px;" asp-area="" asp-controller="Aluno" asp-action="GerarRelatorio" target="_blank">Relatório de todos os alunos</a>
 </div>
-	<p></p>
+<p></p>
 
 
+<table width="1px" class="table table-bordered table-striped align-items-center bg-gray-100">
+    <thead>
+        <tr>
+            <th class="col">Matrícula</th>
+            <th class="col">Nome</th>
+            <th class="col">Sexo</th>
+            <th class="col">Data de nascimento</th>
+            <th class="col">CPF</th>
+            <th class="col">Cidade</th>
+            <th class="col">UF</th>
+            <th class="options" scope="col">Opcões</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Aluno aluno in Model)
+        {
+            <tr>
+                <td>@aluno.Matricula</td>
+                <td style="text-align:start;">@aluno.Nome</td>
+                <td>@(aluno.Sexo)</td>
+                <td>@aluno.DataNascimento.ToString("dd/MM/yyyy")</td>
+                <td>@aluno.CPF</td>
+                <td>@aluno.Cidade.Nome</td>
+                <td>@aluno.Cidade.UF</td>
+                <td class="teta">
+                    <a type="button" class="btn options btn-success" href="@Url.Action("CadastroAluno", "Aluno", new { matricula = aluno.Matricula })">Editar <img src="~/images/icon-editar.svg" /></a>
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExclui-@aluno.Matricula">
+                        Excluir <img src="~/images/icon-lixeira.svg" />
+                    </button>
+                </td>
+            </tr>
 
-	<table width="1px" class="table table-bordered table-striped align-items-center bg-gray-100">
-		<thead>
-			<tr>
-				<th class="col">Matrícula</th>
-				<th class="col">Nome</th>
-				<th class="col">Sexo</th>
-				<th class="col">Data de nascimento</th>
-				<th class="col">CPF</th>
-				<th class="col">Cidade</th>
-				<th class="col">UF</th>
-			<th class="options" scope="col">Opcões</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach (Aluno aluno in Model)
-			{
-				<tr>
-					<td>@aluno.Matricula</td>
-					<td>@aluno.Nome</td>
-				<td>@(aluno.Sexo == SexoEnum.M ? "Masculino" : "Feminino")</td>
-				<td>@(aluno.DataNascimento.HasValue ? aluno.DataNascimento.Value.ToString("dd/MM/yyyy") : "--");</td>
-					<td>@aluno.CPF</td>
-					<td>@aluno.Cidade.Nome</td>
-					<td>@aluno.Cidade.UF</td>
-					<td class="teta">
-					<a type="button" class="btn options btn-success" href="@Url.Action("CadastroAluno", "Aluno", new { matricula = aluno.Matricula })">Editar <img src="~/images/icon-editar.svg" /></a>
-						<button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExclui-@aluno.Matricula">
-						Excluir <img src="~/images/icon-lixeira.svg"/>
-						</button>
-					</td>
-				</tr>
-				<div class="modal" id="modalExclui-@aluno.Matricula" tabindex="-1">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Excluir</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-							</div>
-							<div class="modal-body">
-								<p>Tem certeza que deseja excluir ?</p>
-							</div>
-							<div class="modal-footer">
-								<form asp-action="RemoveAluno" asp-controller="Aluno" method="post">
-									<input type="hidden" name="matricula" value="@aluno.Matricula" />
-									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-									<button type="submit" class="btn btn-primary">Excluir </button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			}
-
-		</tbody>
-	</table>
+            <div class="modal" id="modalExclui-@aluno.Matricula" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Excluir</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Tem certeza que deseja excluir ?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <form asp-action="RemoveAluno" asp-controller="Aluno" method="post">
+                                <input type="hidden" name="matricula" value="@aluno.Matricula" />
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Excluir </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </table>
+    </tbody>
 
 

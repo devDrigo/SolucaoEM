@@ -3,35 +3,35 @@
 @model EM.DOMAIN.CidadeModel
 
 @{
-	bool isEdicao = ViewBag.IsEdicao ?? false;
-	string titulo = isEdicao ? "Editar Cidade" : "Cadastrar Cidade";
-	ViewData["Title"] = titulo;
+    bool isEdicao = ViewBag.IsEdicao ?? false;
+    string titulo = isEdicao ? "Editar Cidade" : "Cadastrar Cidade";
+    ViewData["Title"] = titulo;
 }
 
 <p></p>
 <div class="formulario">
-	<h1 style="text-align:center;">@titulo</h1>
+    <h1 style="text-align:center;">@titulo</h1>
 
-	<div class="">
-		<form class="row justify-content-center" asp-controller="Cidade" asp-action="CadastroCidade" method="post">
-			<input type="hidden" asp-for="Id_cidade" />
-			<input type="hidden" id="isEdicao" name="isEdicao" value="@isEdicao" />
-			<div class="col-md-4">
-				<label for="inputCidade" class="form-label">Cidade:</label>
-				<input type="text" class="form-control" placeholder="Digite o Nome da Cidade" id="Nome" name="Nome" value="@Model.Nome" required>
-				<span asp-validation-for="Nome" class="text-danger"></span>
-			</div>
+    <div class="">
+        <form class="row justify-content-center" asp-controller="Cidade" asp-action="CadastroCidade" method="post">
+            <input type="hidden" asp-for="Id_cidade" />
+            <input type="hidden" id="isEdicao" name="isEdicao" value="@isEdicao" />
+            <div class="col-md-4">
+                <label for="inputCidade" class="form-label">Cidade:</label>
+                <input type="text" class="form-control" placeholder="Digite o Nome da Cidade" id="Nome" name="Nome" value="@Model.Nome" required>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
 
-			<div class="col-md-2">
-				<label for="inputUF" class="form-label">Estado:</label>
-				<input oninput="handleInput(event)" maxlength="2" type="text" class="form-control" placeholder="UF" id="UF" name="UF" value="@Model.UF" required>
-				<span asp-validation-for="UF" class="text-danger"></span>
-			</div>
-			<p></p>
+            <div class="col-md-2">
+                <label for="inputUF" class="form-label">Estado:</label>
+                <input oninput="handleInput(event)" maxlength="2" type="text" class="form-control" placeholder="UF" id="UF" name="UF" value="@Model.UF" required>
+                <span asp-validation-for="UF" class="text-danger"></span>
+            </div>
+            <p></p>
 
-			<div class="centraliza col-md-12">
-				<button style="text-align:center;" class="centraliza btn btn-primary" type="submit">Salvar</button>
-			</div>
-		</form>
-	</div>
+            <div class="centraliza col-md-12">
+                <button style="text-align:center;" class="centraliza btn btn-primary" type="submit">Salvar</button>
+            </div>
+        </form>
+    </div>
 </div>

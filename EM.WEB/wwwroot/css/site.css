@@ -1,6 +1,17 @@
 html {
     font-size: 14px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: -65px;
+}
+
 
 @media (min-width: 768px) {
     html {

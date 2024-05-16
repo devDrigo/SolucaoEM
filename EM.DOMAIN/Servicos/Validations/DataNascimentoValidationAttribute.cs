@@ -9,7 +9,7 @@ namespace EM.DOMAIN.Servicos.Validations
 {
 	public class DataNascimentoValidationAttribute : ValidationAttribute
 	{
-		protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+		protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
 		{
 			DateTime dataNascimento;
 			if (value == null || !DateTime.TryParse(value.ToString(), out dataNascimento))
@@ -22,7 +22,7 @@ namespace EM.DOMAIN.Servicos.Validations
 				return new ValidationResult("Data de Nascimento deve estar no passado.");
 			}
 
-			return ValidationResult.Success;
+			return ValidationResult.Success!;
 		}
 	}
 }

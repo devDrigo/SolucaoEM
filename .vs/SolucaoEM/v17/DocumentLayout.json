@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\",
+  "WorkspaceRootPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|c:\\users\\escolar manager\\downloads\\solucaoem-main\\solucaoem-main\\em.web\\views\\aluno\\relatorioaluno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|solutionrelative:em.web\\views\\aluno\\relatorioaluno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26FB455F-97E5-4E3F-9016-801F78C0455E}|EM.REPOSITORY\\EM.REPOSITORY.csproj|c:\\users\\escolar manager\\desktop\\2024\\05\\14\\nova pasta\\apresenta\u00E7\u00E3o\\solucaoem-main\\em.repository\\repositorioaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FB455F-97E5-4E3F-9016-801F78C0455E}|EM.REPOSITORY\\EM.REPOSITORY.csproj|solutionrelative:em.repository\\repositorioaluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BBE5E8B-F5DA-46F8-B42B-58AA60B6E214}|EM.DOMAIN\\EM.DOMAIN.csproj|c:\\users\\escolar manager\\downloads\\solucaoem-main\\solucaoem-main\\em.domain\\servicos\\relatorio\\headerevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE5E8B-F5DA-46F8-B42B-58AA60B6E214}|EM.DOMAIN\\EM.DOMAIN.csproj|solutionrelative:em.domain\\servicos\\relatorio\\headerevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26FB455F-97E5-4E3F-9016-801F78C0455E}|EM.REPOSITORY\\EM.REPOSITORY.csproj|c:\\users\\escolar manager\\desktop\\2024\\05\\14\\nova pasta\\apresenta\u00E7\u00E3o\\solucaoem-main\\em.repository\\bdconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26FB455F-97E5-4E3F-9016-801F78C0455E}|EM.REPOSITORY\\EM.REPOSITORY.csproj|solutionrelative:em.repository\\bdconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\em.web\\em.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|solutionrelative:em.web\\em.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|c:\\users\\escolar manager\\desktop\\2024\\05\\14\\nova pasta\\apresenta\u00E7\u00E3o\\solucaoem-main\\em.web\\views\\aluno\\tabelaaluno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|solutionrelative:em.web\\views\\aluno\\tabelaaluno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\em.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|solutionrelative:em.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\em.web\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFFBAB3-06C2-4BE4-A48C-7D58A050503E}|EM.WEB\\EM.WEB.csproj|solutionrelative:em.web\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepositorioAluno.cs",
+              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.REPOSITORY\\RepositorioAluno.cs",
+              "RelativeDocumentMoniker": "EM.REPOSITORY\\RepositorioAluno.cs",
+              "ToolTip": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.REPOSITORY\\RepositorioAluno.cs",
+              "RelativeToolTip": "EM.REPOSITORY\\RepositorioAluno.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:26:09.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BDConnect.cs",
+              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.REPOSITORY\\BDConnect.cs",
+              "RelativeDocumentMoniker": "EM.REPOSITORY\\BDConnect.cs",
+              "ToolTip": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.REPOSITORY\\BDConnect.cs",
+              "RelativeToolTip": "EM.REPOSITORY\\BDConnect.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:24:55.646Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -54,54 +80,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RelatorioAluno.cshtml",
-              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\Views\\Aluno\\RelatorioAluno.cshtml",
-              "RelativeDocumentMoniker": "EM.WEB\\Views\\Aluno\\RelatorioAluno.cshtml",
-              "ToolTip": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\Views\\Aluno\\RelatorioAluno.cshtml",
-              "RelativeToolTip": "EM.WEB\\Views\\Aluno\\RelatorioAluno.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwDkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T17:09:07.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HeaderEvent.cs",
-              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.DOMAIN\\Servicos\\Relatorio\\HeaderEvent.cs",
-              "RelativeDocumentMoniker": "EM.DOMAIN\\Servicos\\Relatorio\\HeaderEvent.cs",
-              "ToolTip": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.DOMAIN\\Servicos\\Relatorio\\HeaderEvent.cs",
-              "RelativeToolTip": "EM.DOMAIN\\Servicos\\Relatorio\\HeaderEvent.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwEYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T17:07:12.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EM.WEB.csproj",
-              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
-              "RelativeDocumentMoniker": "EM.WEB\\EM.WEB.csproj",
-              "ToolTip": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\EM.WEB.csproj",
-              "RelativeToolTip": "EM.WEB\\EM.WEB.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-06T12:45:25.02Z",
+              "Title": "TabelaAluno.cshtml",
+              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.WEB\\Views\\Aluno\\TabelaAluno.cshtml",
+              "RelativeDocumentMoniker": "EM.WEB\\Views\\Aluno\\TabelaAluno.cshtml",
+              "ToolTip": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.WEB\\Views\\Aluno\\TabelaAluno.cshtml",
+              "RelativeToolTip": "EM.WEB\\Views\\Aluno\\TabelaAluno.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAD8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T15:07:05.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "EM.WEB\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Escolar Manager\\Downloads\\SolucaoEM-main\\SolucaoEM-main\\EM.WEB\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "EM.WEB\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAEIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-06T11:26:44.342Z"
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.WEB\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "EM.WEB\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresenta\u00E7\u00E3o\\SolucaoEM-main\\EM.WEB\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "EM.WEB\\Controllers\\AlunoController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAcwFAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:26:58.499Z"
             }
           ]
         }

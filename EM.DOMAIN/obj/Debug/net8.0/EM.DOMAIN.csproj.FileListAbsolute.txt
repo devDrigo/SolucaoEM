@@ -112,3 +112,65 @@ C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.DOMAIN\obj\D
 C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
 C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
 C:\Users\Escolar Manager\Downloads\SolucaoEM-main\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.deps.json
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.AssemblyReference.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfo.cs
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\rodrigo.garcia\Downloads\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.deps.json
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.deps.json
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfo.cs
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.sourcelink.json
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\2024\05\13\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.deps.json
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.deps.json
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.AssemblyInfo.cs
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.sourcelink.json
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\refint\EM.DOMAIN.dll
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.DOMAIN\obj\Debug\net8.0\ref\EM.DOMAIN.dll
