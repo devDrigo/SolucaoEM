@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "LYBqPPS2FyydAe+T9Sc8g29bIxeJ3weSXpOOYo+e62s45vCWFo3NSz1x2n3XviKjQd1ZMfzazlFpyNVclWaB9Q==",
+  "dgSpecHash": "OAH5Ys7EAe0/TUmuRRqm1x8huG7w4tevgWMmOp0ufEKFKBO3ZbCTj7fNtxbYlYH1T7chQu4gy9vHHrNXPWK5GA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj",
+  "projectFilePath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Escolar Manager\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
-    "C:\\Users\\Escolar Manager\\.nuget\\packages\\firebirdsql.data.firebirdclient\\10.0.0\\firebirdsql.data.firebirdclient.10.0.0.nupkg.sha512",
-    "C:\\Users\\Escolar Manager\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512"
+    "C:\\Users\\Desktop\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
+    "C:\\Users\\Desktop\\.nuget\\packages\\firebirdsql.data.firebirdclient\\10.0.0\\firebirdsql.data.firebirdclient.10.0.0.nupkg.sha512",
+    "C:\\Users\\Desktop\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'BouncyCastle 1.8.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'BouncyCastle 1.8.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "BouncyCastle",
       "targetGraphs": [
         "net8.0"
@@ -23,7 +23,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'iTextSharp 5.5.13.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'iTextSharp 5.5.13.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         "net8.0"

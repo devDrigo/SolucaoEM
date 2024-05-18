@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="COPE.FDB" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="10.0.0" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
   </ItemGroup>

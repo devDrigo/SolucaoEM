@@ -540,3 +540,43 @@ C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-
 C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.WEB\obj\Debug\net8.0\EM.WEB.pdb
 C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.WEB\obj\Debug\net8.0\EM.WEB.genruntimeconfig.cache
 C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.WEB\obj\Debug\net8.0\ref\EM.WEB.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\appsettings.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.staticwebassets.runtime.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.exe
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.deps.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.runtimeconfig.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.WEB.pdb
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\itextsharp.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.DOMAIN.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.REPOSITORY.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.DOMAIN.pdb
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\bin\Debug\net8.0\EM.REPOSITORY.pdb
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.AssemblyInfoInputs.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.AssemblyInfo.cs
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.RazorAssemblyInfo.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.RazorAssemblyInfo.cs
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.sourcelink.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets\msbuild.EM.WEB.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets\msbuild.build.EM.WEB.props
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EM.WEB.props
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EM.WEB.props
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\scopedcss\bundle\EM.WEB.styles.css
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\scopedcss\projectbundle\EM.WEB.bundle.scp.css
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.csproj.Up2Date
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\refint\EM.WEB.dll
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.pdb
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\EM.WEB.genruntimeconfig.cache
+C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\obj\Debug\net8.0\ref\EM.WEB.dll

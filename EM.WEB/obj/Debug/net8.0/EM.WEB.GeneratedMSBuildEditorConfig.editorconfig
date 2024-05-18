@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EM.WEB
 build_property.RootNamespace = EM.WEB
-build_property.ProjectDir = C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.WEB\
+build_property.ProjectDir = C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Escolar Manager\Desktop\2024\05\14\Nova pasta\apresentação\SolucaoEM-main\EM.WEB
+build_property.MSBuildProjectDirectory = C:\Users\Desktop\Desktop\solucaoEM\SolucaoEM\EM.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Aluno/CadastroAluno.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Aluno/CadastroAluno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQ2FkYXN0cm9BbHVuby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Aluno/RelatorioAluno.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Aluno/RelatorioAluno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cUmVsYXRvcmlvQWx1bm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Aluno/TabelaAluno.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Aluno/TabelaAluno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cVGFiZWxhQWx1bm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Cidade/CadastroCidade.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Cidade/CadastroCidade.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXENhZGFzdHJvQ2lkYWRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Cidade/TabelaCidade.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Cidade/TabelaCidade.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXFRhYmVsYUNpZGFkZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Home/Index.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Shared/Error.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/_ViewImports.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/_ViewStart.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Desktop/2024/05/14/Nova pasta/apresentação/SolucaoEM-main/EM.WEB/Views/Shared/_Layout.cshtml]
+[C:/Users/Desktop/Desktop/solucaoEM/SolucaoEM/EM.WEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0x9hm7o8us

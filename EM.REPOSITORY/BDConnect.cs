@@ -5,11 +5,7 @@ namespace EM.REPOSITORY
 {
     public class BDConnect
     {
-        //pego o caminho relativo para nao precisar mudar quando abro em computador diferente.
-        private static string _caminhoRelativo = @"\COPE.FDB";
-        private static string _caminhoAbsoluto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _caminhoRelativo);
-
-        private static string _caminho = $@"Database={_caminhoAbsoluto};User=SYSDBA;Password=masterkey;DataSource=localhost;Port=3054;";
+        private static string _caminho = $@"Server=52.67.33.12;Database=cope;User=SYSDBA;Password=masterkey;Port=3050;";
 
         private static FbConnection? conn = null;
 

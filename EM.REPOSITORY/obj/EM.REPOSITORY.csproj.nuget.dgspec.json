@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {}
+    "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj": {
+    "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj",
+        "projectUniqueName": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj",
         "projectName": "EM.DOMAIN",
-        "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\obj\\",
+        "projectPath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {
+    "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.REPOSITORY\\EM.REPOSITORY.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj",
+        "projectUniqueName": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.REPOSITORY\\EM.REPOSITORY.csproj",
         "projectName": "EM.REPOSITORY",
-        "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\EM.REPOSITORY.csproj",
-        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.REPOSITORY\\obj\\",
+        "projectPath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.REPOSITORY\\EM.REPOSITORY.csproj",
+        "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.REPOSITORY\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj": {
-                "projectPath": "C:\\Users\\Escolar Manager\\Desktop\\2024\\05\\14\\Nova pasta\\apresentação\\SolucaoEM-main\\EM.DOMAIN\\EM.DOMAIN.csproj"
+              "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\Desktop\\solucaoEM\\SolucaoEM\\EM.DOMAIN\\EM.DOMAIN.csproj"
               }
             }
           }
@@ -144,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
